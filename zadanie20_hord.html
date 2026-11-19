@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 20 Hordiienko</title>
+    <script type="text/javascript">
+        function AB_hor() {
+            var xa = parseFloat(document.getElementById('xa_hor').value);
+            var ya = parseFloat(document.getElementById('ya_hor').value);
+            var xb = parseFloat(document.getElementById('xb_hor').value);
+            var yb = parseFloat(document.getElementById('yb_hor').value);
+            var ab = Math.sqrt(Math.pow(xa - xb, 2) + Math.pow(ya - yb, 2));
+            document.getElementById('wynik').innerHTML = "Długość boku AB = " + ab.toFixed(2);
+        }
+        function BC_hor() {
+            var xb = parseFloat(document.getElementById('xb_hor').value);
+            var yb = parseFloat(document.getElementById('yb_hor').value);
+            var xc = parseFloat(document.getElementById('xc_hor').value);
+            var yc = parseFloat(document.getElementById('yc_hor').value);
+            var bc = Math.sqrt(Math.pow(xb - xc, 2) + Math.pow(yb - yc, 2));
+            document.getElementById('wynik').innerHTML = "Długość boku BC = " + bc.toFixed(2);
+        }
+        function AC_hor() {
+            var xa = parseFloat(document.getElementById('xa_hor').value);
+            var ya = parseFloat(document.getElementById('ya_hor').value);
+            var xc = parseFloat(document.getElementById('xc_hor').value);
+            var yc = parseFloat(document.getElementById('yc_hor').value);
+            var ac = Math.sqrt(Math.pow(xa - xc, 2) + Math.pow(ya - yc, 2));
+            document.getElementById('wynik').innerHTML = "Długość boku AC = " + ac.toFixed(2);
+        }
+        function okno_zamknij_hordiienko() { window.close(); }
+    </script>
+</head>
+<body>
+    <h2>Obliczanie długości boków trójkąta</h2>
+    <form>
+        A: xa = <input type="text" id="xa_hor" size="5"> ya = <input type="text" id="ya_hor" size="5"><br><br>
+        B: xb = <input type="text" id="xb_hor" size="5"> yb = <input type="text" id="yb_hor" size="5"><br><br>
+        C: xc = <input type="text" id="xc_hor" size="5"> yc = <input type="text" id="yc_hor" size="5"><br><br>
+        <input type="button" value="Oblicz AB" onclick="AB_hor()">
+        <input type="button" value="Oblicz BC" onclick="BC_hor()">
+        <input type="button" value="Oblicz AC" onclick="AC_hor()"><br><br>
+    </form>
+    <div id="wynik" style="color:red; font-size:20px;"></div>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_hordiienko()">
+</body>
+</html>

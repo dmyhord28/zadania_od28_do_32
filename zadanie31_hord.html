@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 31 Hordiienko</title>
+    <script>
+        function okno_zamknij_hordiienko() { 
+          window.close(); 
+        }
+    </script>
+</head>
+<body bgcolor="lightblue">
+    <div style="color:red;font-size:51px;">
+        <script type="text/javascript">
+           var pudelko = {
+                rodzaj: 'pudelko',
+                material: 'karton',
+                kolor: 'brązowy',
+                pudelko_pokaz_hordiienko: function ()
+                    {
+                        document.write("Dane obiektu rodzaj oraz material"+"<br>")
+                        document.write("Moje dane ==>"+this.rodzaj + " " + this.material)
+                    }
+            }
+            pudelko.pudelko_pokaz_hordiienko();
+            pudelko.wiek=5;
+            pudelko.wypisz_hordiienko=function() {alert("Wiek: " + this.wiek + " lat")}
+            pudelko.wypisz_hordiienko();
+
+        </script>
+    </div>
+    <br>
+    <div style="color:blue;font-size:40px;">
+        <br>
+        Mój numer w dzienniku jest 4 i moje dane to:<br>
+        Obiekt to pudełko<br>
+        pola:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rodzaj<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Material<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kolor<br>
+        metoda: <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pudelko_pokaz_hordiienko();<br>
+        ==============================================<br>
+        nowe pole to wiek dla obiektu pudelko wartość pola to 5<br>
+        nowa defincja metoda to wypisz_hordiienko(); z użyciem alert();<br>
+        użycie metody wypisz_hordiienko();
+    <div>
+    <br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_hordiienko()">
+</body>
+</html>

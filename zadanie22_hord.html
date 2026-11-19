@@ -1,0 +1,41 @@
+ 
+         <html> 
+ <!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 22 Hordiienko</title>
+    <script type="text/javascript">
+        function Pole_hor(a_hor, b_hor) {
+            var a = parseFloat(a_hor);
+            var b = parseFloat(b_hor);
+            var pole = a * b;
+            document.getElementById('wyprowadz_pole_hor').value = pole.toFixed(2);
+        }
+        function obwod_hor(a_hor, b_hor) {
+            var a = parseFloat(a_hor);
+            var b = parseFloat(b_hor);
+            var obwod = 2 * (a + b);
+            document.getElementById('wyprowadz_obwod_hor').value = obwod.toFixed(2);
+        }
+        function okno_zamknij_hordiienko() { window.close(); }
+    </script>
+</head>
+<body>
+    <h2>Obliczanie pola i obwodu prostokąta</h2>
+    <form>
+        Podaj a: <input type="text" id="a_dana_hor" size="6"><br><br>
+        Podaj b: <input type="text" id="b_dana_hor" size="6"><br><br>
+        <input type="button" value="Oblicz pole" onclick="Pole_hor(document.getElementById('a_dana_hor')
+            .value, document.getElementById('b_dana_hor').value)"><br><br>
+        <input type="button" value="Oblicz obwód" onclick="obwod_hor(document.getElementById('a_dana_hor')
+            .value, document.getElementById('b_dana_hor').value)"><br><br>
+        Pole: <input type="text" id="wyprowadz_pole_hor" size="10"><br><br>
+        Obwód: <input type="text" id="wyprowadz_obwod_hor" size="10"><br><br>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_hordiienko()">
+</body>
+</html>
+    
+
+      

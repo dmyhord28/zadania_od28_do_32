@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 25 Hordiienko</title>
+    <script>function okno_zamknij_hordiienko() { window.close(); }</script>
+</head>
+<body>
+    <script language="JavaScript">
+        var N0_hor = parseFloat(prompt("Podaj N0 = ",""));
+        var t_hor = parseFloat(prompt("Podaj czas = ",""));
+        var T_0_5_hor = parseFloat(prompt("Podaj okres połowicznego zaniku = ",""));
+
+        var lambda_hor = Math.LN2 / T_0_5_hor;
+        var N_hor = N0_hor * Math.pow(Math.E, -lambda_hor * t_hor);
+
+        document.write("N0 = " + N0_hor + " [sztuk]<br>")
+        document.write("t = " + t_hor + " [lat]<br>");
+        document.write("T1/2 = " + T_0_5_hor + " [lat]<br>");
+        document.write("Lambda = " + lambda_hor.toFixed(7) + " [1/rok]<br>");
+        document.write("N = " + N_hor.toFixed(7) + " [sztuk]<br>");
+    </script>
+    <br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_hordiienko()">
+</body>
+</html>

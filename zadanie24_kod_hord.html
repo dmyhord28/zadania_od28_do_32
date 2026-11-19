@@ -1,0 +1,45 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="30"> 
+         <!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 24 Hordiienko</title>
+    <script>function okno_zamknij_hordiienko() { window.close(); }</script>
+    <style>
+      body{
+        background-color: rgb(155, 153, 153);
+      }
+    </style>
+</head>
+<body>
+  <font color="blue">
+    <script language="JavaScript">
+        var x1_hord = parseFloat(prompt("Podaj x1=", ""));
+        var x2_hord = parseFloat(prompt("Podaj x2=", ""));
+
+        document.write("wczytane liczby: x1=" + x1_hord 
+            + " &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x2=" + x2_hord + "<br>");
+
+        var rad_hord = (x1_hord * Math.PI) / 180;
+        document.write("x1 w stopniach = " + x1_hord 
+            + " &nbsp;&nbsp; x1 w radianach = " + rad_hord.toFixed(2) + "<br>");
+
+        var y1_hord = (3 * Math.pow(x1_hord, 6/8));
+        var y2_hord = 2 * Math.cos(rad_hord) + 3 * Math.sin(rad_hord);
+        var y3_hord = Math.pow(Math.pow(x1_hord,5) + 2 * Math.pow(x2_hord,4), 1/3) * Math.abs(x1_hord - x2_hord);
+
+        document.write("y1 = " + y1_hord.toFixed(2) + "<br>");
+        document.write("y2 = " + y2_hord.toFixed(2) + "<br>");
+        document.write("y3 = " + y3_hord.toFixed(2) + "<br>");
+    </script>
+    <br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_hordiienko()">
+</body>
+</font>
+</background>
+</html>
+      </textarea> 
+    </body> 
+</html> 

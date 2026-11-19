@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 30 – Hordiienko</title>
+    <script>
+        function okno_zamknij_hordiienko() { window.close(); }
+    </script>
+</head>
+<body bgcolor="yellow">
+    <div style="color:green;font-size:46px;">
+        <script type="text/javascript">
+            var pudelko = {
+                rodzaj: 'pudelko',
+                material: 'karton',
+                kolor: 'brązowy',
+                pudelko_pokaz_hordiienko: function ()
+                    {
+                        document.write("Dane obiektu rodzaj oraz material"+"<br>")
+                        document.write("Moje dane ==>"+this.rodzaj + " " + this.material)
+                    }
+            }
+            pudelko.pudelko_pokaz_hordiienko();
+        </script>
+    </div>
+    <br>
+    <div style="color:blue;font-size:35px;">
+        <br>
+        Obiekt to pudelko<br>
+        pola:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rodzaj<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;material<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kolor<br>
+        metoda: <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pudelko_wyswietl_hordiienko<br>
+    </div>
+    <br>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_hordiienko()">
+</body>
+</html>
